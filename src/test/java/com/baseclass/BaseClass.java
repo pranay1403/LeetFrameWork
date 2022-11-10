@@ -40,7 +40,8 @@ public class BaseClass {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 	}
 	@AfterTest
-	public void tearUp() {
+	public void tearUp() throws InterruptedException {
+		Thread.sleep(5000);
 		driver.quit();
 	}
 

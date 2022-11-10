@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 10 11:41:28 IST 2022</td>
+<td>Started on:</td><td>Thu Nov 10 17:02:17 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24008 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26343 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.test.cases.TestCase1.LoginFuctionality()'><b>LoginFuctionality</b><br>Test class: com.test.cases.TestCase1</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;btn-content__2V4r&quot;&gt;...&lt;/span&gt; is not clickable at point (767, 358). Other element would receive the click: &lt;div class=&quot;spinner&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=107.0.5304.88)
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;btn__3Y3g fancy-btn__2prB primary__lqsj light__3AfA btn__1z2C btn-md__M51O &quot; data-no-border=&quot;true&quot; data-cy=&quot;sign-in-btn&quot; id=&quot;signin_btn&quot;&gt;...&lt;/button&gt; is not clickable at point (768, 358). Other element would receive the click: &lt;div class=&quot;spinner&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.89)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-30NBV301&apos;, ip: &apos;172.20.10.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e07fe5b22564fd5f05e208ea8ad88828, clickElement {id=01fd469c-bcf8-4c92-9d1d-d3748dfbca30}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PRANAY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55802}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55802/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e07fe5b22564fd5f05e208ea8ad88828)] -&gt; xpath: //span [text()=&apos;Sign In&apos;]]
-Session ID: e07fe5b22564fd5f05e208ea8ad88828
+Command: [4d86e7eab296cad413fd68b7b53e1c4b, clickElement {id=220acba7-0e91-4bba-a19d-59ed587088ec}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PRANAY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59275/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4d86e7eab296cad413fd68b7b53e1c4b)] -&gt; id: signin_btn]
+Session ID: 4d86e7eab296cad413fd68b7b53e1c4b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -102,7 +102,7 @@ Session ID: e07fe5b22564fd5f05e208ea8ad88828
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.pages.classes.LoginPage.clickonSigninbtn(LoginPage.java:65)
+	at com.pages.classes.LoginPage.clickonSigninbtn(LoginPage.java:80)
 	at com.test.cases.TestCase1.LoginFuctionality(TestCase1.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
@@ -130,16 +130,16 @@ Session ID: e07fe5b22564fd5f05e208ea8ad88828
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1170173753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1170173753'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;btn-content__2V4r&quot;&gt;...&lt;/span&gt; is not clickable at point (767, 358). Other element would receive the click: &lt;div class=&quot;spinner&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=107.0.5304.88)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1955049794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1955049794'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;btn__3Y3g fancy-btn__2prB primary__lqsj light__3AfA btn__1z2C btn-md__M51O &quot; data-no-border=&quot;true&quot; data-cy=&quot;sign-in-btn&quot; id=&quot;signin_btn&quot;&gt;...&lt;/button&gt; is not clickable at point (768, 358). Other element would receive the click: &lt;div class=&quot;spinner&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.89)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-30NBV301&apos;, ip: &apos;172.20.10.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e07fe5b22564fd5f05e208ea8ad88828, clickElement {id=01fd469c-bcf8-4c92-9d1d-d3748dfbca30}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PRANAY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55802}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55802/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e07fe5b22564fd5f05e208ea8ad88828)] -&gt; xpath: //span [text()=&apos;Sign In&apos;]]
-Session ID: e07fe5b22564fd5f05e208ea8ad88828
+Command: [4d86e7eab296cad413fd68b7b53e1c4b, clickElement {id=220acba7-0e91-4bba-a19d-59ed587088ec}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PRANAY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59275/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4d86e7eab296cad413fd68b7b53e1c4b)] -&gt; id: signin_btn]
+Session ID: 4d86e7eab296cad413fd68b7b53e1c4b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -156,7 +156,7 @@ Session ID: e07fe5b22564fd5f05e208ea8ad88828
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.pages.classes.LoginPage.clickonSigninbtn(LoginPage.java:65)
+	at com.pages.classes.LoginPage.clickonSigninbtn(LoginPage.java:80)
 	at com.test.cases.TestCase1.LoginFuctionality(TestCase1.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
@@ -185,8 +185,8 @@ Session ID: e07fe5b22564fd5f05e208ea8ad88828
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>9</td>
-<td>com.test.cases.TestCase1@313ac989</td></tr>
+<td>3</td>
+<td>com.test.cases.TestCase1@4562e04d</td></tr>
 </table><p>
 </body>
 </html>

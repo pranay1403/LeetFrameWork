@@ -1,13 +1,18 @@
 package com.pages.classes;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.utility.ReadProp;
 
  public class LoginPage {
+ 
 	ReadProp prop = new ReadProp();
 	public String user = prop.username();
 	public String pass = prop.password();
@@ -18,7 +23,7 @@ import com.utility.ReadProp;
 	@FindBy(name = "password")
 	private WebElement password;
 
-	@FindBy(xpath = "//span [text()='Sign In']")
+	@FindBy(id =  "signin_btn")
 	private WebElement signbtn;
 
 	@FindBy(xpath = "//a [text()='Forgot Password?']")
@@ -26,8 +31,9 @@ import com.utility.ReadProp;
 
 	@FindBy(xpath = "//span [text()='Sign Up']")
 	private WebElement signup;
-
+    public WebDriverWait wait;
 	public LoginPage(WebDriver driver) {
+		wait =new WebDriverWait(driver, Duration.ofSeconds(20));
 		PageFactory.initElements(driver, this);
 	}
 
@@ -62,7 +68,16 @@ import com.utility.ReadProp;
 	}
 
 	public void clickonSigninbtn() {
-		signbtn.click();
+//	try {
+//		Thread.sleep(5000);
+//	} catch (InterruptedException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+//	wait.until(ExpectedConditions.elementToBeClickable(signbtn));
+	wait.withTimeout(Duration.ofSeconds(2000));
+	wait.until(ExpectedConditions.elementToBeClickable(signbtn));	
+	signbtn.click();
 	}
 
 }
