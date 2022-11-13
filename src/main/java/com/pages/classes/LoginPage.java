@@ -68,16 +68,20 @@ import com.utility.ReadProp;
 	}
 
 	public void clickonSigninbtn() {
-//	try {
-//		Thread.sleep(5000);
-//	} catch (InterruptedException e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//	}
+	try {
+		Thread.sleep(5000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 //	wait.until(ExpectedConditions.elementToBeClickable(signbtn));
-	wait.withTimeout(Duration.ofSeconds(2000));
-	wait.until(ExpectedConditions.elementToBeClickable(signbtn));	
+//	wait.withTimeout(Duration.ofSeconds(2000));
+//	wait.until(ExpectedConditions.elementToBeClickable(signbtn));	
 	signbtn.click();
+	}
+	public void clickonSignup() {
+		
+		signup.click();
 	}
 
 }

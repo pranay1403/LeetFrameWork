@@ -1,90 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-10T21:44:33 IST" name="Default suite" finished-at="2022-11-10T21:44:58 IST" duration-ms="24680">
+  <suite started-at="2022-11-13T10:40:40 IST" name="Default suite" finished-at="2022-11-13T10:41:05 IST" duration-ms="25807">
     <groups>
     </groups>
-    <test started-at="2022-11-10T21:44:33 IST" name="Default test" finished-at="2022-11-10T21:44:58 IST" duration-ms="24680">
+    <test started-at="2022-11-13T10:40:40 IST" name="Default test" finished-at="2022-11-13T10:41:05 IST" duration-ms="25807">
       <class name="com.test.cases.TestCase1">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.test.cases.TestCase1@4562e04d]" started-at="2022-11-10T21:44:33 IST" name="browserSetup" finished-at="2022-11-10T21:44:48 IST" duration-ms="14381" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.test.cases.TestCase1@4d5d943d]" started-at="2022-11-13T10:40:40 IST" name="browserSetup" finished-at="2022-11-13T10:40:56 IST" duration-ms="16131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="LoginFuctionality()[pri:0, instance:com.test.cases.TestCase1@4562e04d]" started-at="2022-11-10T21:44:48 IST" name="LoginFuctionality" finished-at="2022-11-10T21:44:51 IST" duration-ms="3781" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="btn__3Y3g fancy-btn__2prB primary__lqsj light__3AfA btn__1z2C btn-md__M51O " data-no-border="true" data-cy="sign-in-btn" id="signin_btn">...</button> is not clickable at point (768, 358). Other element would receive the click: <div class="spinner">...</div>
-  (Session info: chrome=107.0.5304.89)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-30NBV301', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c8e73304728122965ba4cab99bf34c64, clickElement {id=6d589c9c-8df9-414b-a182-da5eca281fa6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PRANAY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49555/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c8e73304728122965ba4cab99bf34c64)] -> id: signin_btn]
-Session ID: c8e73304728122965ba4cab99bf34c64]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn__3Y3g fancy-btn__2prB primary__lqsj light__3AfA btn__1z2C btn-md__M51O " data-no-border="true" data-cy="sign-in-btn" id="signin_btn">...</button> is not clickable at point (768, 358). Other element would receive the click: <div class="spinner">...</div>
-  (Session info: chrome=107.0.5304.89)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-30NBV301', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c8e73304728122965ba4cab99bf34c64, clickElement {id=6d589c9c-8df9-414b-a182-da5eca281fa6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PRANAY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49555/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c8e73304728122965ba4cab99bf34c64)] -> id: signin_btn]
-Session ID: c8e73304728122965ba4cab99bf34c64
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at com.pages.classes.LoginPage.clickonSigninbtn(LoginPage.java:80)
-at com.test.cases.TestCase1.LoginFuctionality(TestCase1.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="LoginFuctionality()[pri:0, instance:com.test.cases.TestCase1@4d5d943d]" started-at="2022-11-13T10:40:56 IST" name="LoginFuctionality" finished-at="2022-11-13T10:41:00 IST" duration-ms="4047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFuctionality -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.test.cases.TestCase1@4562e04d]" started-at="2022-11-10T21:44:51 IST" name="tearUp" finished-at="2022-11-10T21:44:58 IST" duration-ms="6464" status="PASS">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.test.cases.TestCase1@4d5d943d]" started-at="2022-11-13T10:41:00 IST" name="tearUp" finished-at="2022-11-13T10:41:05 IST" duration-ms="5267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->

@@ -1,12 +1,13 @@
 package com.test.cases;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.baseclass.BaseClass;
 import com.pages.classes.HomePage;
 import com.pages.classes.LoginPage;
-
+@Listeners(com.baseclass.listener.class)
 public class TestCase1 extends BaseClass {
 
 	@Test
@@ -19,7 +20,9 @@ public class TestCase1 extends BaseClass {
 		Assert.assertTrue(lp.visiabilityOfpassword());
 		lp.enterCridentials();
 		Assert.assertTrue(lp.visiabilityOfsignbtn());
-		lp.clickonSigninbtn();
+//		lp.clickonSigninbtn();
+		Assert.assertTrue(lp.visiabilityOfsignup());
+		lp.clickonSignup();
 
 	}
 
