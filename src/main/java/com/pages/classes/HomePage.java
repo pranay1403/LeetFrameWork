@@ -19,6 +19,9 @@ public class HomePage {
 	@FindBy(xpath = "/html/body/div[2]/div/div[1]/div/div[1]/div[3]/div[1]/div/div/div[1]/div/div/span")
 	private WebElement logo;
 	
+	@FindBy(xpath = "//a[@class='btn sign-up-btn hover-panel round']")
+	private WebElement createNewAcc;
+	
 	public HomePage(WebDriver driver) {
 		
 		PageFactory.initElements(driver, this);
@@ -30,5 +33,12 @@ public class HomePage {
 	public boolean visiabilityofsigninbtn() {
 		boolean vs=signinbtn.isDisplayed();
 		return vs;
+	}
+	public boolean visiabilityofCreatenewAcc() {
+		boolean vd=createNewAcc.isDisplayed();
+		return vd;
+	}
+	public void clickonCreateNewAccbtn() {
+		createNewAcc.click();
 	}
 }
